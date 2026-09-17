@@ -1147,10 +1147,16 @@ footer {
 
     /* GET ID */
 
+    @media (max-width: 600px) {
+
     .get-id {
-        display: none;
+        display: inline-block;   
+        font-size: 16px;
+        padding: 10px 16px;
+        order: 3;                
     }
 
+}
 
     /* SIDEBAR */
 
