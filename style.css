@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f5f5fb;
@@ -69,12 +76,16 @@ body {
     color: white;
 }
 
+
+/* IPL IMAGE */
+
 img[alt="IPL"] {
     width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
 }
+
 
 /* BUTTON */
 
@@ -130,6 +141,7 @@ img[alt="IPL"] {
 
 .content {
     width: 100%;
+    min-width: 0;
     padding: 0 15px 50px;
     overflow: hidden;
 }
@@ -183,11 +195,17 @@ img[alt="IPL"] {
     box-shadow: 0 8px 20px #aaa;
 }
 
+
+/* GAME NAME */
+
 .game-name {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
     color: white;
     padding: 25px 15px 12px;
     font-size: 18px;
@@ -240,12 +258,10 @@ img[alt="IPL"] {
     background: white;
 }
 
-
 .hero-image {
     border: 3px solid #ffca05;
     border-radius: 14px;
     overflow: hidden;
-
 }
 
 .hero-image img {
@@ -451,7 +467,7 @@ footer {
 }
 
 
-/* FLOATING BUTTON */
+/* FLOATING WHATSAPP BUTTON */
 
 .floating-btn {
     position: fixed;
@@ -476,310 +492,7 @@ footer {
 
 .floating-btn img {
     width: 24px;
-    height: 25px;
+    height: 24px;
     display: block;
     object-fit: contain;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 1200px) {
-
-    .header {
-        gap: 15px;
-    }
-
-    .navbar {
-        gap: 15px;
-    }
-
-    .navbar a {
-        font-size: 13px;
-    }
-
-    .sidebar {
-        width: 250px;
-    }
-
-    .game-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
-
-@media (max-width: 900px) {
-
-    .sidebar {
-        width: 220px;
-    }
-
-    .game-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-section {
-        grid-template-columns: 1fr;
-        padding: 35px;
-    }
-
-    .hero-content h1 {
-        font-size: 34px;
-    }
-
-    .sports-row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .wide-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .header {
-        height: auto;
-        flex-wrap: wrap;
-        padding: 15px;
-    }
-
-    .logo {
-        width: 100%;
-        font-size: 40px;
-    }
-
-    .navbar {
-        order: 2;
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 10px;
-    }
-
-    .get-id {
-        display: none;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .content {
-        padding: 0;
-    }
-
-    .game-grid,
-    .sports-row,
-    .image-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .top-game-card {
-        height: 200px;
-    }
-
-    .hero-section {
-        padding: 30px 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 28px;
-    }
-
-    .hero-image img {
-        height: 280px;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-
-    .floating-btn {
-        right: 15px;
-        bottom: 15px;
-        font-size: 14px;
-    }
-
-}
-/* MOBILE RESPONSIVE FIX */
-
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
-}
-
-@media (max-width: 600px) {
-
-    .header {
-        width: 100%;
-        height: auto;
-        padding: 10px 15px;
-        gap: 10px;
-    }
-
-    .logo {
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo img {
-        width: 150px;
-        max-width: 100%;
-    }
-
-    .navbar {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: auto;
-        gap: 20px;
-        flex-wrap: nowrap;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        flex-shrink: 0;
-    }
-
-    .main-container {
-        width: 100%;
-        display: block;
-    }
-
-    .content {
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    .game-section {
-        width: 100%;
-        padding: 10px 15px 30px;
-    }
-
-    .top-title {
-        width: 100%;
-        font-size: 20px;
-        padding: 15px 10px;
-    }
-
-    .game-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .top-game-card {
-        width: 100%;
-        height: 200px;
-    }
-
-    .hero-section {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 30px 15px;
-        gap: 25px;
-    }
-
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero-content h1 {
-        font-size: 28px;
-        word-wrap: break-word;
-    }
-
-    .hero-image {
-        width: 100%;
-    }
-
-    .hero-image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .section {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 15px;
-        margin: 30px auto;
-    }
-
-    .sports-row {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .sport {
-        width: 100%;
-    }
-
-    .wide-cards {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 15px;
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .wide-card {
-        width: 100%;
-        height: auto;
-        min-height: 140px;
-        padding: 30px 25px;
-    }
-
-    .image-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .game-card {
-        width: 100%;
-        height: auto;
-    }
-
-    .game-card img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .footer-container {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 35px 20px;
-    }
-
-    .floating-btn {
-        right: 15px;
-        bottom: 15px;
-        padding: 13px 18px;
-        font-size: 14px;
-    }
-
-    .floating-btn img {
-        width: 22px;
-        height: 22px;
-    }
 }
