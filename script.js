@@ -27,12 +27,17 @@ document.querySelectorAll('a[href^="#"]').forEach(function(link) {
 });
 
 
+// WhatsApp Number
+
+const whatsappNumber = "917509970907";
+
+
 // Header Button - Get ID WhatsApp
 
 function showMessage() {
 
     window.open(
-        "https://wa.me/917509970907",
+        "https://wa.me/" + whatsappNumber,
         "_blank"
     );
 
@@ -43,9 +48,15 @@ function showMessage() {
 
 function exploreGames() {
 
-    document.querySelector('#games').scrollIntoView({
-        behavior: 'smooth'
-    });
+    const gamesSection = document.querySelector('#games');
+
+    if (gamesSection) {
+
+        gamesSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+
+    }
 
 }
 
@@ -55,22 +66,45 @@ function exploreGames() {
 function contactUs() {
 
     window.open(
-        "https://wa.me/917509970907",
+        "https://wa.me/" + whatsappNumber,
         "_blank"
     );
 
 }
 
 
-// Game Card Click Effect
+// IPL IMAGE - WhatsApp
+
+const whatsappImage = document.querySelector('.whatsapp-image');
+
+if (whatsappImage) {
+
+    whatsappImage.style.cursor = "pointer";
+
+    whatsappImage.addEventListener('click', function() {
+
+        window.open(
+            "https://wa.me/" + whatsappNumber,
+            "_blank"
+        );
+
+    });
+
+}
+
+
+// ALL TOP GAME CARDS - WhatsApp
 
 document.querySelectorAll('.top-game-card').forEach(function(card) {
 
+    card.style.cursor = "pointer";
+
     card.addEventListener('click', function() {
 
-        const name = this.querySelector('.game-name').innerText;
-
-        alert("You selected: " + name);
+        window.open(
+            "https://wa.me/" + whatsappNumber,
+            "_blank"
+        );
 
     });
 
