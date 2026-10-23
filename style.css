@@ -1565,3 +1565,66 @@ footer {
         height: 32px;
     }
 }
+/* FIX WHATSAPP INFORMATION BUTTON ON ALL DEVICES */
+.whatsapp-info-container .whatsapp-info-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #25D366;
+    color: #ffffff;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 45px;
+    text-align: center;
+    padding: 25px 15px;
+    gap: 18px;
+}
+
+.whatsapp-info-container .whatsapp-info-text {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.whatsapp-info-container .whatsapp-info-logo {
+    display: block;
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    background: transparent;
+}
+
+.whatsapp-info-container .whatsapp-info-btn:hover {
+    background-color: #128C7E;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-info-container {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .whatsapp-info-container .whatsapp-info-btn {
+        min-height: 130px;
+        padding: 18px 12px;
+        border-radius: 30px;
+        gap: 12px;
+    }
+
+    .whatsapp-info-container .whatsapp-info-text {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    .whatsapp-info-container .whatsapp-info-logo {
+        width: 35px;
+        height: 35px;
+    }
+}
