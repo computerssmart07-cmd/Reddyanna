@@ -29,7 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(link) {
 
 // WhatsApp Number
 
-const whatsappNumber = "917509970907";
+const whatsappNumber = "918269333504";
 
 
 // Header Button - Get ID WhatsApp
