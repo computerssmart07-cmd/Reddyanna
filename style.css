@@ -1142,16 +1142,21 @@ footer {
     background: linear-gradient(90deg, #00695C, #80CBC4) !important;
     color: #FFFFFF !important;
 }
-/* Indian card images: full image, no cropping */
+/* FIX: Indian Card Games - show full images */
 .image-grid .game-card {
+    width: 100% !important;
     height: auto !important;
     aspect-ratio: auto !important;
     overflow: visible !important;
+    border-radius: 10px;
 }
 
 .image-grid .game-card img {
-    display: block;
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
     height: auto !important;
-    object-fit: fill !important;
+    max-width: 100%;
+    object-fit: contain !important;
+    object-position: center;
+    transform: none !important;
 }
