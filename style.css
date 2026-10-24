@@ -1142,3 +1142,16 @@ footer {
     background: linear-gradient(90deg, #00695C, #80CBC4) !important;
     color: #FFFFFF !important;
 }
+/* Indian card images: full image, no cropping */
+.image-grid .game-card {
+    height: auto !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+}
+
+.image-grid .game-card img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    object-fit: fill !important;
+}
