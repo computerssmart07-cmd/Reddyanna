@@ -1142,21 +1142,37 @@ footer {
     background: linear-gradient(90deg, #00695C, #80CBC4) !important;
     color: #FFFFFF !important;
 }
-/* FIX: Indian Card Games - show full images */
+/* Indian Card Games - Equal Size Images */
+.image-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
 .image-grid .game-card {
     width: 100% !important;
-    height: auto !important;
-    aspect-ratio: auto !important;
-    overflow: visible !important;
+    height: 220px !important;
+    min-width: 0;
+    overflow: hidden !important;
     border-radius: 10px;
 }
 
 .image-grid .game-card img {
-    display: block !important;
     width: 100% !important;
-    height: auto !important;
-    max-width: 100%;
+    height: 100% !important;
     object-fit: contain !important;
-    object-position: center;
+    display: block !important;
     transform: none !important;
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px;
+    }
+
+    .image-grid .game-card {
+        height: 160px !important;
+    }
 }
