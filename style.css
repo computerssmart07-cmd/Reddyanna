@@ -1644,3 +1644,64 @@ a[href*="api.whatsapp.com"]:hover {
         max-width: 35px !important;
     }
 }
+/* Fix spacing between IPL image and game cards */
+.game-section {
+    display: flow-root;
+    overflow: hidden;
+}
+
+.game-section > h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.game-section > .whatsapp-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Proper spacing between game images */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.game-grid .top-game-card {
+    min-width: 0;
+    margin: 0;
+    position: relative;
+}
+
+.game-grid .top-game-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+    .game-section > h2 {
+        margin-top: 22px;
+        margin-bottom: 22px;
+        padding: 0 10px;
+        font-size: 24px;
+    }
+
+    .game-section > .whatsapp-image {
+        margin-bottom: 28px;
+    }
+
+    .game-grid {
+        gap: 16px;
+        margin-top: 20px;
+    }
+}
