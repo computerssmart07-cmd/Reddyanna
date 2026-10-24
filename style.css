@@ -1134,7 +1134,7 @@ footer {
   }
 }
 /* KABADDI COLOR FIX */
-.kabaddi {
+#kabaddi {
     background: linear-gradient(90deg, #00695C, #80CBC4) !important;
     color: #FFFFFF !important;
 }
