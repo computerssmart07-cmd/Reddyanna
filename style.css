@@ -486,7 +486,9 @@ img[alt="IPL"] ~ br {
 .greyhound {
     background: linear-gradient(90deg, #3b0dbb, #d6c8ff);
 }
-
+.kabaddi {
+    background: linear-gradient(90deg, #20B2AA, #B2DFDB);
+}
 
 /* =====================================================
    WIDE CARDS
