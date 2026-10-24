@@ -487,7 +487,8 @@ img[alt="IPL"] ~ br {
     background: linear-gradient(90deg, #3b0dbb, #d6c8ff);
 }
 .Kabaddi {
-    background: linear-gradient(90deg, #20B2AA, #B2DFDB);
+    background: linear-gradient(90deg, #26A69A, #80CBC4);
+    color: #FFFFFF;
 }
 
 /* =====================================================
