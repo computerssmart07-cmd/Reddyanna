@@ -1106,19 +1106,30 @@ footer {
         padding: 11px 14px;
     }
 }
-/* FORCE FULL GAME IMAGES ON MOBILE */
-@media screen and (max-width: 600px) {
-    .game-grid .top-game-card {
-        height: auto !important;
-        aspect-ratio: 16 / 9 !important;
-        overflow: hidden;
-    }
+/* FIX: MOBILE GAME IMAGES NOT CROPPED */
+@media (max-width: 600px) {
+  .game-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
 
-    .game-grid .top-game-card img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: contain !important;
-        object-position: center center !important;
-        display: block !important;
-    }
+  .game-grid .top-game-card {
+    width: 100% !important;
+    height: 120px !important;
+    min-width: 0 !important;
+    aspect-ratio: auto !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .game-grid .top-game-card img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+  }
 }
