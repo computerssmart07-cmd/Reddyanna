@@ -1106,3 +1106,19 @@ footer {
         padding: 11px 14px;
     }
 }
+/* FORCE FULL GAME IMAGES ON MOBILE */
+@media screen and (max-width: 600px) {
+    .game-grid .top-game-card {
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important;
+        overflow: hidden;
+    }
+
+    .game-grid .top-game-card img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        object-position: center center !important;
+        display: block !important;
+    }
+}
