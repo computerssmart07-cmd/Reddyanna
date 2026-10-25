@@ -22,11 +22,7 @@ img {
     max-width: 100%;
 }
 
-
-/* =====================================================
-   HEADER
-   ===================================================== */
-
+/* HEADER */
 .header {
     min-height: 110px;
     background: #050505;
@@ -39,9 +35,7 @@ img {
     z-index: 1000;
 }
 
-.logo {
-    flex-shrink: 0;
-}
+.logo { flex-shrink: 0; }
 
 .logo img {
     width: 180px;
@@ -51,9 +45,7 @@ img {
     display: block;
 }
 
-.logo span {
-    color: #ffd83d;
-}
+.logo span { color: #ffd83d; }
 
 .logo small {
     display: block;
@@ -78,9 +70,7 @@ img {
     transition: 0.3s;
 }
 
-.navbar a:hover {
-    color: white;
-}
+.navbar a:hover { color: white; }
 
 .get-id {
     background: #ffca05;
@@ -93,15 +83,9 @@ img {
     flex-shrink: 0;
 }
 
-.get-id:hover {
-    background: white;
-}
+.get-id:hover { background: white; }
 
-
-/* =====================================================
-   MAIN LAYOUT
-   ===================================================== */
-
+/* MAIN LAYOUT */
 .main-container {
     display: flex;
     min-height: calc(100vh - 110px);
@@ -126,9 +110,7 @@ img {
     font-weight: 600;
 }
 
-.sidebar a:hover {
-    color: #d49e00;
-}
+.sidebar a:hover { color: #d49e00; }
 
 .content {
     flex: 1;
@@ -138,11 +120,7 @@ img {
     overflow: hidden;
 }
 
-
-/* =====================================================
-   TOP GAME SECTION
-   ===================================================== */
-
+/* TOP GAME SECTION */
 .game-section {
     background: #f6f6fc;
     padding: 10px 20px 40px;
@@ -167,9 +145,7 @@ img {
     margin: 22px 0;
 }
 
-
-/* WhatsApp information button */
-
+/* WHATSAPP INFORMATION BUTTON */
 .whatsapp-info-container {
     width: 100%;
     margin: 10px 0 25px;
@@ -204,9 +180,7 @@ img {
     display: block;
 }
 
-
-/* IPL image spacing */
-
+/* IPL IMAGE */
 img[alt="IPL"],
 .whatsapp-image {
     display: block;
@@ -215,20 +189,14 @@ img[alt="IPL"],
     height: auto;
 }
 
-img[alt="IPL"] ~ br {
-    display: none;
-}
+img[alt="IPL"] ~ br { display: none; }
 
 .game-section img[alt="IPL"] {
     margin: 22px 0 30px;
     position: relative;
 }
 
-
-/* =====================================================
-   GAME GRID
-   ===================================================== */
-
+/* TOP GAME GRID */
 .game-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -250,6 +218,7 @@ img[alt="IPL"] ~ br {
     position: relative;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    background: #f5f5fb;
 }
 
 .top-game-card img {
@@ -277,11 +246,7 @@ img[alt="IPL"] ~ br {
     font-weight: bold;
 }
 
-
-/* =====================================================
-   HIGHLIGHTS
-   ===================================================== */
-
+/* HIGHLIGHTS */
 .highlights-section {
     width: 100%;
     min-height: 520px;
@@ -354,25 +319,14 @@ img[alt="IPL"] ~ br {
     z-index: 2;
 }
 
-
-/* =====================================================
-   HERO SECTION
-   ===================================================== */
-
+/* HERO SECTION */
 .hero-section {
     min-height: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
     padding: 45px 8%;
-    background: linear-gradient(
-        180deg,
-        #020202 0%,
-        #090302 15%,
-        #1b0702 40%,
-        #350b02 70%,
-        #4b0e00 100%
-    );
+    background: linear-gradient(180deg, #020202 0%, #090302 15%, #1b0702 40%, #350b02 70%, #4b0e00 100%);
     color: white;
     align-items: center;
     position: relative;
@@ -406,9 +360,7 @@ img[alt="IPL"] ~ br {
     cursor: pointer;
 }
 
-.hero-btn:hover {
-    background: white;
-}
+.hero-btn:hover { background: white; }
 
 .hero-image {
     border: 3px solid #ffca05;
@@ -423,11 +375,7 @@ img[alt="IPL"] ~ br {
     display: block;
 }
 
-
-/* =====================================================
-   SPORTS SECTIONS
-   ===================================================== */
-
+/* SPORTS SECTIONS */
 .section {
     max-width: 1400px;
     margin: 35px auto;
@@ -465,36 +413,18 @@ img[alt="IPL"] ~ br {
     box-shadow: 0 5px 15px #bbb;
 }
 
-.cricket {
-    background: linear-gradient(90deg, #762616, #d7b3aa);
-}
-
-.football {
-    background: linear-gradient(90deg, #087d7b, #c7e3e3);
-}
-
-.tennis {
-    background: linear-gradient(90deg, #a50000, #dfbaba);
-}
-
-.horse {
-    background: linear-gradient(90deg, #d97900, #f0d4a2);
-}
-
-.greyhound {
-    background: linear-gradient(90deg, #3b0dbb, #d6c8ff);
-}
+.cricket { background: linear-gradient(90deg, #762616, #d7b3aa); }
+.football { background: linear-gradient(90deg, #087d7b, #c7e3e3); }
+.tennis { background: linear-gradient(90deg, #a50000, #dfbaba); }
+.horse { background: linear-gradient(90deg, #d97900, #f0d4a2); }
+.greyhound { background: linear-gradient(90deg, #3b0dbb, #d6c8ff); }
 
 .Kabbadi {
     background: linear-gradient(90deg, #00695C, #80CBC4) !important;
     color: #FFFFFF !important;
 }
 
-
-/* =====================================================
-   WIDE CARDS
-   ===================================================== */
-
+/* WIDE CARDS */
 .wide-cards {
     max-width: 1400px;
     margin: 40px auto;
@@ -513,40 +443,21 @@ img[alt="IPL"] ~ br {
     transition: transform 0.3s;
 }
 
-.wide-card:hover {
-    transform: scale(1.02);
-}
+.wide-card:hover { transform: scale(1.02); }
 
 .wide-card h2 {
     font-size: 23px;
     margin-bottom: 10px;
 }
 
-.wide-card p {
-    font-size: 15px;
-}
+.wide-card p { font-size: 15px; }
 
-.e-cricket {
-    background: linear-gradient(90deg, #602078, #e6c4ee);
-}
+.e-cricket { background: linear-gradient(90deg, #602078, #e6c4ee); }
+.evolution { background: linear-gradient(90deg, #752033, #df9baa); }
+.aviator { background: linear-gradient(90deg, #f40030, #802c10); }
+.sportsbook { background: linear-gradient(90deg, #1c356f, #a7c4ef); }
 
-.evolution {
-    background: linear-gradient(90deg, #752033, #df9baa);
-}
-
-.aviator {
-    background: linear-gradient(90deg, #f40030, #802c10);
-}
-
-.sportsbook {
-    background: linear-gradient(90deg, #1c356f, #a7c4ef);
-}
-
-
-/* =====================================================
-   IMAGE GRID
-   ===================================================== */
-
+/* FOUR IMAGE GRID */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -559,25 +470,24 @@ img[alt="IPL"] ~ br {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    background: #f5f5fb;
 }
 
+/* KEY FIX: show complete image instead of cropping */
 .game-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     display: block;
-    transition: transform 0.3s;
+    transition: none;
 }
 
 .game-card:hover img {
-    transform: scale(1.05);
+    transform: none;
 }
 
-
-/* =====================================================
-   FOOTER
-   ===================================================== */
-
+/* FOOTER */
 footer {
     background: white;
     margin-top: 60px;
@@ -612,9 +522,7 @@ footer {
     margin-bottom: 12px;
 }
 
-.footer-column a:hover {
-    color: #d49e00;
-}
+.footer-column a:hover { color: #d49e00; }
 
 .social-icons {
     display: flex;
@@ -641,11 +549,7 @@ footer {
     font-size: 14px;
 }
 
-
-/* =====================================================
-   FLOATING WHATSAPP BUTTON
-   ===================================================== */
-
+/* FLOATING WHATSAPP BUTTON */
 .floating-btn {
     position: fixed;
     right: 25px;
@@ -673,28 +577,16 @@ footer {
     object-fit: contain;
 }
 
-
-/* =====================================================
-   TABLET
-   ===================================================== */
-
+/* TABLET */
 @media (max-width: 1100px) {
     .header {
         gap: 20px;
         padding: 10px 20px;
     }
 
-    .navbar {
-        gap: 18px;
-    }
-
-    .navbar a {
-        font-size: 14px;
-    }
-
-    .sidebar {
-        width: 220px;
-    }
+    .navbar { gap: 18px; }
+    .navbar a { font-size: 14px; }
+    .sidebar { width: 220px; }
 
     .game-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -706,9 +598,7 @@ footer {
         gap: 25px;
     }
 
-    .highlight-card {
-        height: 210px;
-    }
+    .highlight-card { height: 210px; }
 
     .image-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -726,26 +616,16 @@ footer {
         gap: 15px;
     }
 
-    .logo img {
-        width: 140px;
-    }
-
-    .navbar {
-        gap: 12px;
-    }
-
-    .navbar a {
-        font-size: 13px;
-    }
+    .logo img { width: 140px; }
+    .navbar { gap: 12px; }
+    .navbar a { font-size: 13px; }
 
     .get-id {
         font-size: 22px;
         padding: 12px 18px;
     }
 
-    .sidebar {
-        width: 180px;
-    }
+    .sidebar { width: 180px; }
 
     .game-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -756,26 +636,15 @@ footer {
         gap: 25px;
     }
 
-    .hero-content h1 {
-        font-size: 34px;
-    }
+    .hero-content h1 { font-size: 34px; }
 
-    .highlights-section {
-        padding: 35px 20px 60px;
-    }
-
-    .highlights-section h2 {
-        font-size: 32px;
-    }
-
-    .highlights-subtitle {
-        font-size: 17px;
-    }
+    .highlights-section { padding: 35px 20px 60px; }
+    .highlights-section h2 { font-size: 32px; }
+    .highlights-subtitle { font-size: 17px; }
 
     .highlights-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 25px;
-        margin-top: 50px;
     }
 
     .footer-container {
@@ -783,11 +652,7 @@ footer {
     }
 }
 
-
-/* =====================================================
-   MOBILE
-   ===================================================== */
-
+/* MOBILE */
 @media (max-width: 600px) {
     .header {
         min-height: auto;
@@ -820,9 +685,7 @@ footer {
         scrollbar-width: none;
     }
 
-    .navbar::-webkit-scrollbar {
-        display: none;
-    }
+    .navbar::-webkit-scrollbar { display: none; }
 
     .navbar a {
         font-size: 15px;
@@ -837,9 +700,7 @@ footer {
         padding: 10px 20px;
     }
 
-    .sidebar {
-        display: none;
-    }
+    .sidebar { display: none; }
 
     .main-container {
         display: block;
@@ -849,16 +710,12 @@ footer {
     .content {
         padding: 0;
         width: 100%;
-        overflow: hidden;
+        overflow: visible;
     }
 
-    .game-section {
-        padding: 10px 12px 35px;
-    }
+    .game-section { padding: 10px 12px 35px; }
 
-    .whatsapp-info-container {
-        margin: 10px 0 25px;
-    }
+    .whatsapp-info-container { margin: 10px 0 25px; }
 
     .whatsapp-info-btn {
         min-height: 150px;
@@ -867,9 +724,7 @@ footer {
         border-radius: 24px;
     }
 
-    .whatsapp-info-text {
-        font-size: 21px;
-    }
+    .whatsapp-info-text { font-size: 21px; }
 
     .whatsapp-info-logo {
         width: 42px;
@@ -899,18 +754,16 @@ footer {
 
     .game-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
+        gap: 12px;
         margin: 0;
         padding: 0;
     }
 
     .top-game-card {
-        width: 100%;
-        height: 140px;
+        height: 165px;
         min-width: 0;
         aspect-ratio: auto;
         border-radius: 10px;
-        margin: 0;
     }
 
     .top-game-card img {
@@ -918,6 +771,11 @@ footer {
         height: 100%;
         object-fit: contain;
         object-position: center;
+    }
+
+    .game-name {
+        padding: 22px 8px 8px;
+        font-size: 14px;
     }
 
     .highlights-section {
@@ -944,7 +802,6 @@ footer {
     }
 
     .highlight-card {
-        width: 100%;
         height: 165px;
         border-radius: 16px;
     }
@@ -962,14 +819,7 @@ footer {
         grid-template-columns: 1fr;
         gap: 25px;
         padding: 40px 20px;
-        background: linear-gradient(
-            180deg,
-            #020202 0%,
-            #0b0301 15%,
-            #200702 40%,
-            #350b02 70%,
-            #4b0e00 100%
-        );
+        background: linear-gradient(180deg, #020202 0%, #0b0301 15%, #200702 40%, #350b02 70%, #4b0e00 100%);
     }
 
     .hero-content h1 {
@@ -983,18 +833,14 @@ footer {
         line-height: 1.7;
     }
 
-    .hero-content h3 {
-        font-size: 18px;
-    }
+    .hero-content h3 { font-size: 18px; }
 
     .hero-btn {
         padding: 14px 28px;
         font-size: 16px;
     }
 
-    .hero-image {
-        width: 100%;
-    }
+    .hero-image { width: 100%; }
 
     .hero-image img {
         width: 100%;
@@ -1036,12 +882,11 @@ footer {
 
     .image-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
+        gap: 12px;
     }
 
     .game-card {
-        width: 100%;
-        height: 180px;
+        height: 210px;
         min-width: 0;
         border-radius: 9px;
         overflow: hidden;
@@ -1054,9 +899,7 @@ footer {
         object-position: center;
     }
 
-    footer {
-        margin-top: 40px;
-    }
+    footer { margin-top: 40px; }
 
     .footer-container {
         grid-template-columns: 1fr;
@@ -1083,45 +926,29 @@ footer {
     }
 }
 
-
-/* =====================================================
-   VERY SMALL MOBILE
-   ===================================================== */
-
+/* VERY SMALL MOBILE */
 @media (max-width: 360px) {
     .game-section {
         padding-left: 8px;
         padding-right: 8px;
     }
 
-    .game-grid {
-        gap: 10px;
-    }
+    .game-grid { gap: 10px; }
 
-    .top-game-card {
-        height: 125px;
-    }
+    .top-game-card { height: 145px; }
 
-    .top-title {
-        font-size: 19px;
-    }
+    .top-title { font-size: 19px; }
 
-    .game-section h2:not(.top-title) {
-        font-size: 20px;
-    }
+    .game-section h2:not(.top-title) { font-size: 20px; }
 
-    .whatsapp-info-text {
-        font-size: 18px;
-    }
+    .whatsapp-info-text { font-size: 18px; }
 
     .highlight-circle {
         font-size: 12px;
         padding: 8px;
     }
 
-    .game-card {
-        height: 160px;
-    }
+    .game-card { height: 185px; }
 
     .floating-btn {
         right: 10px;
