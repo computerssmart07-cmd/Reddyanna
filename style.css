@@ -993,3 +993,25 @@ footer {
         height: 250px;
     }
 }
+/* Increase card box size */
+#cards .game-card {
+    height: 360px !important;
+    min-height: 360px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Keep complete image visible */
+#cards .game-card img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+/* Mobile: 2 x 2 layout */
+@media (max-width: 600px) {
+    #cards .game-card {
+        height: 270px !important;
+        min-height: 270px !important;
+    }
+}
