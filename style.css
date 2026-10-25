@@ -1021,3 +1021,44 @@ footer {
         height: 150px;
     }
 }
+/* Equal and bigger image cards */
+#cards.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+    align-items: stretch;
+}
+
+#cards.image-grid .game-card {
+    width: 100%;
+    height: 320px;
+    min-width: 0;
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards.image-grid .game-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain !important;
+    object-position: center;
+}
+
+/* Mobile: 2 columns, equal bigger cards */
+@media (max-width: 600px) {
+    #cards.image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    #cards.image-grid .game-card {
+        height: 250px;
+    }
+}
