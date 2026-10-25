@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -168,6 +167,7 @@ img {
     margin: 22px 0;
 }
 
+
 /* WhatsApp information button */
 
 .whatsapp-info-container {
@@ -204,6 +204,7 @@ img {
     display: block;
 }
 
+
 /* IPL image spacing */
 
 img[alt="IPL"],
@@ -213,9 +214,6 @@ img[alt="IPL"],
     max-width: 100%;
     height: auto;
 }
-
-/* Remove the extra HTML line breaks after the IPL image.
-   The spacing is controlled with margin instead. */
 
 img[alt="IPL"] ~ br {
     display: none;
@@ -486,6 +484,7 @@ img[alt="IPL"] ~ br {
 .greyhound {
     background: linear-gradient(90deg, #3b0dbb, #d6c8ff);
 }
+
 .Kabbadi {
     background: linear-gradient(90deg, #00695C, #80CBC4) !important;
     color: #FFFFFF !important;
@@ -907,8 +906,9 @@ footer {
 
     .top-game-card {
         width: 100%;
-        height: auto;
-        aspect-ratio: 4 / 3;
+        height: 140px;
+        min-width: 0;
+        aspect-ratio: auto;
         border-radius: 10px;
         margin: 0;
     }
@@ -916,7 +916,8 @@ footer {
     .top-game-card img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+        object-position: center;
     }
 
     .highlights-section {
@@ -1035,12 +1036,22 @@ footer {
 
     .image-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
+        gap: 10px;
     }
 
     .game-card {
+        width: 100%;
         height: 180px;
+        min-width: 0;
         border-radius: 9px;
+        overflow: hidden;
+    }
+
+    .game-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
     }
 
     footer {
@@ -1087,6 +1098,10 @@ footer {
         gap: 10px;
     }
 
+    .top-game-card {
+        height: 125px;
+    }
+
     .top-title {
         font-size: 19px;
     }
@@ -1104,132 +1119,13 @@ footer {
         padding: 8px;
     }
 
+    .game-card {
+        height: 160px;
+    }
+
     .floating-btn {
         right: 10px;
         bottom: 10px;
         padding: 11px 14px;
-    }
-}
-/* FIX: MOBILE GAME IMAGES NOT CROPPED */
-@media (max-width: 600px) {
-  .game-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 10px !important;
-    width: 100% !important;
-    overflow: visible !important;
-  }
-
-  .game-grid .top-game-card {
-    width: 100% !important;
-    height: 120px !important;
-    min-width: 0 !important;
-    aspect-ratio: auto !important;
-    overflow: hidden !important;
-    box-sizing: border-box !important;
-  }
-
-  .game-grid .top-game-card img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    display: block !important;
-  }
-}
-/* KABADDI COLOR FIX */
-#kabaddi {
-    background: linear-gradient(90deg, #00695C, #80CBC4) !important;
-    color: #FFFFFF !important;
-}/* FORCE ALL INDIAN CARD IMAGES TO EQUAL SIZE */
-.image-grid {
-    display: grid !important;
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-    gap: 22px !important;
-    align-items: stretch !important;
-}
-
-.image-grid > .game-card {
-    width: 100% !important;
-    height: 220px !important;
-    min-height: 220px !important;
-    max-height: 220px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    overflow: hidden !important;
-}
-
-.image-grid > .game-card > img {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 100% !important;
-    max-height: 100% !important;
-    object-fit: contain !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-@media (max-width: 600px) {
-    .image-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 14px !important;
-    }
-
-    .image-grid > .game-card {
-        height: 160px !important;
-        min-height: 160px !important;
-        max-height: 160px !important;
-    }
-}
-/* FIX: Mobile card game images — large and fully visible */
-@media (max-width: 600px) {
-    #cards .image-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
-    }
-
-    #cards .game-card {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 4 / 3;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-
-    #cards .game-card img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-        transform: none;
-        background: #f5f5fb;
-    }
-@media screen and (max-width: 600px) {
-    #cards .image-grid {
-        display: grid !important;
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 14px !important;
-    }
-
-    #cards .game-card {
-        width: 100% !important;
-        height: auto !important;
-        aspect-ratio: 4 / 3 !important;
-        overflow: hidden !important;
-    }
-
-    #cards .game-card img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: contain !important;
-        object-position: center !important;
-        transform: none !important;
-    }
-}
-    #cards .game-card:hover img {
-        transform: none;
     }
 }
