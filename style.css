@@ -1183,3 +1183,32 @@ footer {
         max-height: 160px !important;
     }
 }
+/* FIX: Mobile card game images — large and fully visible */
+@media (max-width: 600px) {
+    #cards .image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    #cards .game-card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    #cards .game-card img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        transform: none;
+        background: #f5f5fb;
+    }
+
+    #cards .game-card:hover img {
+        transform: none;
+    }
+}
