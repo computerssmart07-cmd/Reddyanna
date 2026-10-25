@@ -1207,7 +1207,28 @@ footer {
         transform: none;
         background: #f5f5fb;
     }
+@media screen and (max-width: 600px) {
+    #cards .image-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+    }
 
+    #cards .game-card {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 4 / 3 !important;
+        overflow: hidden !important;
+    }
+
+    #cards .game-card img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        transform: none !important;
+    }
+}
     #cards .game-card:hover img {
         transform: none;
     }
